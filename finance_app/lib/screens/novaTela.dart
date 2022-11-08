@@ -7,27 +7,31 @@ class NovaTela extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-          margin: EdgeInsets.all(10),
-          height: 100,
-          transform: Matrix4.translationValues(0, -205, 0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-             color: Colors.grey[200]
-          ) ,
-           child: Row(
-            children: [
-              
-              Text(title
+    return  Column(
+      children: [
+        Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              transform: Matrix4.translationValues(0, -205, 0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                 color: Colors.grey[200]
+              ) ,
+               child: Row(
+                children: [
+                  
+                  Text(
+                    title
+                     ),
+                 const Text(">")
+               // SvgPicture.asset('assets/images/pattern.svg',
+               // width: 32,)
+                  ],
+               ),
+               
             ),
-            Text(">")
-           // SvgPicture.asset('assets/images/pattern.svg',
-           // width: 32,)
-            ],
-           ),
-         
-          
-          );
+      ],
+    );
           
   }
 }

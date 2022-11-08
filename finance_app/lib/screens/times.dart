@@ -1,7 +1,7 @@
 class Times {
-   String ?  name;
-   String ? subtitle;
-   String ? nameurl;
+  final  String   name;
+  final  String  subtitle;
+  final  String nameurl;
 
-  Times({this.name, this.subtitle, this.nameurl});
+  Times({required this.name, required this.subtitle, required this.nameurl});
 }
