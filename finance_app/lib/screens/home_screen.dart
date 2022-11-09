@@ -34,8 +34,16 @@ const HomeScreen({super.key});
               )
             ],
           ),
-        )
-        
+        ),
+        bottomNavigationBar:  BottomNavigationBar(items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.add)
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.add)
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.add)
+          )
+        ]
+        ),
       ),
     );
   }

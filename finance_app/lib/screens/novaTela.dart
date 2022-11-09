@@ -93,11 +93,11 @@ class NovaTela extends StatelessWidget {
                   Text(
                     "  >"
                   ),
-                   Row(
-          children: 
-            Times.teams.map((e) => Text(e["name"])).toList()
-          ,
-        )
+           //        Row(
+     //     children: 
+        //    Times.teams.map((e) => Text(e["name"])).toList()
+     //     ,
+    //    )
                 ],
                  
               ),
@@ -107,7 +107,7 @@ class NovaTela extends StatelessWidget {
           ),
            
         ),
-        
+        NovaTelaConfig()
         
       ],
        
