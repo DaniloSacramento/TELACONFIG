@@ -70,7 +70,7 @@ class NovaTela extends StatelessWidget {
           ),
         ),
         Container(
-          margin: const EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
           width: double.infinity,
           height: 100,
           transform: Matrix4.translationValues(0, -205, 0),
@@ -81,9 +81,9 @@ class NovaTela extends StatelessWidget {
           child: Align(
             alignment: Alignment.topCenter,
             child: Padding(
-              padding: const EdgeInsets.all(12),
+              padding:  EdgeInsets.all(12),
               child: Row(
-                children: const [
+                children:  [
                   Text(
                     "SEUS INFLUENCIADORES",
                     style: TextStyle(
@@ -93,7 +93,11 @@ class NovaTela extends StatelessWidget {
                   Text(
                     "  >"
                   ),
-                   
+                   Row(
+          children: 
+            Times.teams.map((e) => Text(e["name"])).toList()
+          ,
+        )
                 ],
                  
               ),
@@ -103,7 +107,8 @@ class NovaTela extends StatelessWidget {
           ),
            
         ),
-        NovaTelaConfig()
+        
+        
       ],
        
     );
@@ -137,29 +142,6 @@ class Times{
       "name": "Bayern Munchen",
       "subtitle": "Germany",
     },
-    {
-      "name": "Barcelona",
-      "subtitle": "Spain",
-    },
-    {
-      "name": "Chelsea",
-      "subtitle": "Spain",
-    },
-    {
-      "name": "Arsenal",
-      "subtitle": "England",
-    },
-    {
-      "name": "Bayern Munchen",
-      "subtitle": "Germany",
-    },
-    {
-      "name": "Barcelona",
-      "subtitle": "Spain",
-    },
-    {
-      "name": "Chelsea",
-      "subtitle": "Spain",
-    },
+   
   ];
 }
